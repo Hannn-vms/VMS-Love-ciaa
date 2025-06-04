@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Love Animation</title>
+  <style>
+    body {
+      background-color: #fff0f3;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .message {
+      margin-top: 100px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .message span {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    .Heart__Love {
+      width: 128px;
+      height: 128px;
+      transform: translate(-50%);
+      position: absolute;
+      left: 50%;
+      top: 280px;
+      overflow: visible;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: translate(-50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%) scale(1.2);
+      }
+    }
+
+    .heart-img {
+      width: 128px;
+      height: 128px;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">You are a Queen <span>my love!</span></div>
+  <div class="Heart__Love">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Red_Heart.svg" class="heart-img" alt="heart">
+  </div>
+</body>
+</html>
